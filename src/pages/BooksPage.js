@@ -59,13 +59,26 @@ const BooksPage = () => {
                 </Link>
               </div>
               <div className="mt-4">
-                <p className="font-bold text-lg mb-1">$12.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
-                <button 
-                  onClick={() => handlePayPalPurchase("Florida Peppermint Goes To School", 12.00)}
-                  className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
-                >
-                  Buy Now with PayPal
-                </button>
+                <div className="space-y-3">
+                  <div className="border rounded-lg p-3">
+                    <p className="font-bold text-lg mb-1">Paperback: $15.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
+                    <button 
+                      onClick={() => handlePayPalPurchase("Florida Peppermint Goes To School - Paperback", 15.00)}
+                      className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
+                    >
+                      Buy Paperback with PayPal
+                    </button>
+                  </div>
+                  <div className="border rounded-lg p-3">
+                    <p className="font-bold text-lg mb-1">Hardcover: $20.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
+                    <button 
+                      onClick={() => handlePayPalPurchase("Florida Peppermint Goes To School - Hardcover", 20.00)}
+                      className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
+                    >
+                      Buy Hardcover with PayPal
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
