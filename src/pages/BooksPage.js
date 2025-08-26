@@ -25,9 +25,9 @@ const BooksPage = () => {
   };
 
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-12 bg-gray-50" data-sb-object-id="bookspage">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-serif text-burgundy mb-8 text-center">Books by Regina Cloman-Moore</h1>
+        <h1 className="text-4xl font-serif text-burgundy mb-8 text-center" data-sb-field-path="pageTitle">Books by Regina Cloman-Moore</h1>
         
         {/* Book Categories Tabs */}
         <div className="flex justify-center mb-12">
@@ -39,21 +39,22 @@ const BooksPage = () => {
         {/* Books Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Florida Peppermint Book */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden" data-sb-object-id="florida-peppermint-book">
             <div className="flex justify-center">
               <img 
                 src={floridaPeppermintCover} 
                 alt="Florida Peppermint Goes To School" 
                 className="w-full h-80 object-contain"
+                data-sb-field-path="bookCover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-serif text-burgundy mb-2">Florida Peppermint Goes To School</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-serif text-burgundy mb-2" data-sb-field-path="bookTitle">Florida Peppermint Goes To School</h3>
+              <p className="text-gray-600 mb-4" data-sb-field-path="bookDescription">
                 August 23rd was just an ordinary day for some, but for Florida Peppermint, this was the most exciting day of her entire life. It was the beginning of a new school year, and Florida would be going to school for the very first time.
               </p>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sm text-gray-500">Published: March 5, 2025</span>
+                <span className="text-sm text-gray-500" data-sb-field-path="publishDate">Published: March 5, 2025</span>
                 <Link to="/books/florida-peppermint" className="text-burgundy font-bold hover:text-gold transition-colors">
                   Learn More
                 </Link>
@@ -84,24 +85,25 @@ const BooksPage = () => {
           </div>
           
           {/* I Know My Father's Voice Book */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden" data-sb-object-id="fathers-voice-book">
             <div className="flex justify-center">
               <img 
                 src={fathersVoiceCover} 
                 alt="I Know My Father's Voice" 
                 className="w-full h-80 object-contain"
+                data-sb-field-path="bookCover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-serif text-burgundy mb-2">I Know My Father's Voice</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-serif text-burgundy mb-2" data-sb-field-path="bookTitle">I Know My Father's Voice</h3>
+              <p className="text-gray-600 mb-4" data-sb-field-path="bookDescription">
                 Journey along with Florida as she experiences adventure, joy, and a little fear. On this journey, Florida discovers that no matter what happens or where she may be, her father is always near. All she has to do is listen for his voice!
               </p>
-              <p className="text-burgundy font-bold mb-4">
+              <p className="text-burgundy font-bold mb-4" data-sb-field-path="specialOffer">
                 Comes with a FREE coloring book!
               </p>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sm text-gray-500">Published: 2024</span>
+                <span className="text-sm text-gray-500" data-sb-field-path="publishDate">Published: 2024</span>
                 <Link to="/books/fathers-voice" className="text-burgundy font-bold hover:text-gold transition-colors">
                   Learn More
                 </Link>
@@ -119,21 +121,22 @@ const BooksPage = () => {
           </div>
           
           {/* Grandma's Lap Book */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden" data-sb-object-id="grandmas-lap-book">
             <div className="flex justify-center">
               <img 
                 src={grandmasLapCover} 
                 alt="Grandma's Lap" 
                 className="w-full h-80 object-contain"
+                data-sb-field-path="bookCover"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-serif text-burgundy mb-2">Grandma's Lap</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-serif text-burgundy mb-2" data-sb-field-path="bookTitle">Grandma's Lap</h3>
+              <p className="text-gray-600 mb-4" data-sb-field-path="bookDescription">
                 A heartwarming children's book about the special bond between a grandmother and her grandchildren.
               </p>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sm text-gray-500">Published: 2024</span>
+                <span className="text-sm text-gray-500" data-sb-field-path="publishDate">Published: 2024</span>
                 <Link to="/books/grandmas-lap" className="text-burgundy font-bold hover:text-gold transition-colors">
                   Learn More
                 </Link>
