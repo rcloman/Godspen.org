@@ -66,6 +66,16 @@ const ContactPage = () => {
             </div>
           </form>
           
+          <div className="mt-12 pt-8 border-t border-gray-200" data-sb-object-id="bulk-orders-info">
+            <h2 className="text-2xl font-serif text-burgundy mb-4" data-sb-field-path="bulkOrdersTitle">Bulk Orders & Educational Discounts</h2>
+            <p className="mb-4" data-sb-field-path="bulkOrdersDescription">
+              Interested in purchasing multiple copies of Regina Cloman-Moore's books for your school, library, or organization? We offer special bulk discounts for orders of 10 books or more.
+            </p>
+            <p className="mb-4" data-sb-field-path="bulkOrdersContact">
+              Please use the contact form above or email us directly at <a href="mailto:bulkorders@godspen.org" class="text-burgundy hover:underline">bulkorders@godspen.org</a> to discuss your needs and receive a custom quote.
+            </p>
+          </div>
+
           <div className="mt-12 pt-8 border-t border-gray-200">
             <h2 className="text-2xl font-serif text-burgundy mb-4">Publisher Information</h2>
             <p className="mb-2">

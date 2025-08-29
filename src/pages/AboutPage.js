@@ -41,6 +41,13 @@ const AboutPage = () => {
             My writing journey began with a desire to share stories that would resonate with children and adults alike. Drawing from my experiences as an educator and parent, I craft narratives that celebrate family and personal growth.
           </p>
         </div>
+
+        <div className="max-w-4xl mx-auto mt-16">
+          <h2 className="text-3xl font-serif text-burgundy mb-6" data-sb-field-path="schoolVisitsTitle">School Visits & Readings</h2>
+          <p className="text-lg mb-8" data-sb-field-path="schoolVisitsDescription">
+            Regina Cloman-Moore is passionate about inspiring young minds through engaging school visits and interactive book readings. She offers dynamic presentations tailored to various age groups, focusing on themes of literacy, imagination, and personal growth. To inquire about scheduling a visit to your school or educational event, please contact us through the form on the <a href="/contact" class="text-burgundy hover:underline">Contact Page</a>.
+          </p>
+        </div>
       </div>
     </div>
   );

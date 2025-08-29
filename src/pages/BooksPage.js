@@ -29,6 +29,15 @@ const BooksPage = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-serif text-burgundy mb-8 text-center" data-sb-field-path="pageTitle">Books by Regina Cloman-Moore</h1>
         
+        {/* Bulk Discount Banner */}
+        <div className="bg-gold text-burgundy p-4 rounded-lg shadow-md mb-12 text-center" data-sb-object-id="bulk-discount-banner">
+          <p className="text-xl font-bold mb-2" data-sb-field-path="bannerTitle">Interested in Bulk Discounts for Schools or Organizations?</p>
+          <p className="text-lg" data-sb-field-path="bannerDescription">
+            We offer special pricing for bulk orders of 10 or more books. Perfect for schools, libraries, and educational programs. 
+            Please <a href="/contact" class="underline font-semibold">contact us</a> for a custom quote!
+          </p>
+        </div>
+        
         {/* Book Categories Tabs */}
         <div className="flex justify-center mb-12">
           <button className="px-6 py-3 bg-burgundy text-white font-bold rounded-l">Children's Books</button>
