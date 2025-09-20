@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import authorImage from '../assets/Reginapic2updated.JPG';
+import authorImage from '../assets/Regina.jpg';
 import floridaPeppermintCover from '../assets/florida_peppermint_book_cover.jpeg';
 import fathersVoiceCover from '../assets/I know My Father\'s Voice.jpg';
 

@@ -108,23 +108,35 @@ const BooksPage = () => {
               <p className="text-gray-600 mb-4" data-sb-field-path="bookDescription">
                 Journey along with Florida as she experiences adventure, joy, and a little fear. On this journey, Florida discovers that no matter what happens or where she may be, her father is always near. All she has to do is listen for his voice!
               </p>
-              <p className="text-burgundy font-bold mb-4" data-sb-field-path="specialOffer">
-                Comes with a FREE coloring book!
-              </p>
-              <div className="flex justify-between items-center mb-4">
+              <div className="mt-4">
+                <div className="space-y-3">
+                  <div className="border rounded-lg p-3">
+                    <p className="font-bold text-lg mb-1" data-sb-field-path="englishVersionPrice">English Version: $15.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
+                    <p className="text-burgundy font-bold mb-2" data-sb-field-path="englishVersionOffer">Comes with a FREE coloring book!</p>
+                    <button 
+                      onClick={() => handlePayPalPurchase("I Know My Father's Voice (English Version with FREE coloring book)", 15.00)}
+                      className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
+                    >
+                      Buy English Version with PayPal
+                    </button>
+                  </div>
+                  <div className="border rounded-lg p-3">
+                    <p className="font-bold text-lg mb-1" data-sb-field-path="spanishVersionPrice">Spanish Version: $15.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
+                    <p className="text-gray-600 mb-2" data-sb-field-path="spanishVersionNote">(Does not include coloring book)</p>
+                    <button 
+                      onClick={() => handlePayPalPurchase("I Know My Father's Voice (Spanish Version)", 15.00)}
+                      className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
+                    >
+                      Buy Spanish Version with PayPal
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-between items-center mb-4 mt-4">
                 <span className="text-sm text-gray-500" data-sb-field-path="publishDate">Published: 2024</span>
                 <Link to="/books/fathers-voice" className="text-burgundy font-bold hover:text-gold transition-colors">
                   Learn More
                 </Link>
-              </div>
-              <div className="mt-4">
-                <p className="font-bold text-lg mb-1">$15.00 <span className="text-sm font-normal">(+$3.00 shipping)</span></p>
-                <button 
-                  onClick={() => handlePayPalPurchase("I Know My Father's Voice (with FREE coloring book)", 15.00)}
-                  className="w-full bg-burgundy hover:bg-opacity-90 text-white py-2 px-4 rounded transition-colors"
-                >
-                  Buy Now with PayPal
-                </button>
               </div>
             </div>
           </div>
